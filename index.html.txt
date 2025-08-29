@@ -1,0 +1,12 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Scrimba Projects</title>
+  </head>
+  <body>
+    <h1>Projects</h1>
+      <ul>
+        <li><a href="business-card/index.html">Business Card</a></li>
+      </ul>
+  </body>
+</html>
