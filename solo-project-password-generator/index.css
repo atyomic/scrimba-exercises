@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    display: flex;;
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+
+.container {
+    align-self: center;
+    margin: 0 auto;
+    height: 55%;
+    width: 55%;
+    background-color: #1F2937;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.header {
+    margin-top: 115px;
+    margin-left: 52px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid #273549;
+    width: 50%;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.highlight {
+    color: #4ADF86
+}
+
+button {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #10B981;
+    border: none;
+    font-family: "Karla", sans-serif;;
+}
+
+#generate-pass:hover {
+    background-color: #059669;
+}
+
+#generate-pass:active {
+    background-color: #047857;
+}
+
+.main {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+
+.password-field {
+  margin-top: 25px;
+  width: 211px;
+  height: 40px;
+  background-color: 273549;
+  border-radius: 10px;
+}
+
+.password-field p {
+    text-align: center;
+    margin-top: 10px;
+    color: #55F991;
+}
+
+#copy-btn {
+    background: none;
+    font-style: italic;
+    margin-left: 140px;
+}
+
+#copy-btn:hover {
+    text-decoration: underline dotted;
+}
+
+#copy-btn:active {
+    font-style: italic;
+    color: gray;
+}
+
+
+
