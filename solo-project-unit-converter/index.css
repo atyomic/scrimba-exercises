@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    background-color: #F4F4F4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.converter {
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    background-color: #6943FF;
+}
+
+.converter h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#convert-number {
+    background-color: #6943FF;
+    border: 3px solid #B295FF;
+    border-radius: 5px;
+    width: 117px;
+    height: 83px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 58px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+#convert-btn {
+    background-color: #ffffff;
+    color: #3D3D3D;
+    border: none;
+    border-radius: 5px;
+    width: 117px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+#convert-btn:hover {
+    background-color: #ffffffd6;
+}
+
+#convert-btn:active {
+    background-color: #ffffff7b;
+}
+
+.result {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.result div {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
