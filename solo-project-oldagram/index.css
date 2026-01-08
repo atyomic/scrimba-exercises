@@ -101,6 +101,7 @@ main {
 
 .post-comments {
     margin: 0 13px;
+    padding-bottom: 15px;
 }
 
 .post-comment-nickname {
