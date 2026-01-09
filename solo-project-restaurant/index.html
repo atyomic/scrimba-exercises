@@ -3,7 +3,38 @@
        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-	<script src="index.js"></script>
+        <header>
+            <h1>Jimmy’s Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+        </header>
+        <main>
+            <section id="menu-list">
+            </section>
+            <section id="order" class="hide-list">
+                <h3 class="order-header">Your order</h3>
+                <ul id="order-list">
+                </ul>
+                <div id="total-price">
+                    <p>Total price:</p>
+                    <p id="price-number">$26</p>
+                </div>
+                <div class="order-food">
+                    <button class="order-btn">Complete order</button>
+                </div>
+            </section>
+            <section id="modal" class="hide-list">
+                <h2>Enter card details</h2>
+                <form id="orderForm">
+                    <input type="text" id="name" maxlength="10" placeholder="Enter your name" required>
+                    <input type="number" maxlength="16" placeholder="Enter card number" required>
+                    <input type="number" maxlength="3" placeholder="Enter CVV" required>
+                    <button class="pay-btn" type="submit">Pay</button>
+                    <button class="cancel-btn">Cancel</button>
+                </form>
+            </section>
+            <p class="greetings-msg hide-list" id="order-complete"></p>
+        </main>
+	<script type="module" src="index.js"></script>
     </body>
 </html>
 
