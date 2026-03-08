@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    min-height: 100vh
+}
+
+.desktop-only {
+    display: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    min-height: 3em;
+    max-height: 3em;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.logo a {   
+    display: flex;
+    margin-left: 1em;
+    gap: 0.25em;
+    text-decoration: none;
+    color: #090909;
+}
+
+
+nav {
+    margin-right: 1em;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    white-space: nowrap;
+}
+
+.link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #090909;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* MAIN */
+
+main {
+    
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15em;
+    background: url("../images/article-image-hero.png");
+    background-size: cover;
+    background-position: center;
+    padding: 1.2em;
+}
+
+.hero-section a {
+    text-decoration: none;
+}
+
+.hero-section__article_date {
+    margin-top: 5.5em;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.hero-section__article_heading {
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.hero-section__article_content {
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-top: 0em;
+}
+
+/* ARTICLES */
+
+.articles,
+.about-me {
+    display: grid;
+    margin: 0 auto;
+    padding: 1.25em;
+    gap: 1.5em;
+}
+
+.articles {
+    max-width: 36em;
+}
+
+/* POST */
+
+.post a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.post__image {
+    width: 100%;
+}
+
+.post__date {
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.post__heading {
+    font-size: 1.35rem;
+    margin: 0.5em 0;
+}
+
+.post__content {
+    margin: 0;
+}
+
+.articles__more {
+    margin: 0 auto;
+    padding: 2em;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* POST EXPEND */
+
+.post__expend h2 {
+    font-size: 2rem;
+}
+
+.post__expend .post__content {
+    margin-bottom: 1em;
+}
+
+.post__expend_image {
+    max-height: 11em;
+    object-fit: none;
+}
+
+.post__about {
+    max-width: 11em;
+}
+
+/* FOOTER */
+
+footer {
+    min-height: 5em;
+    background-color: #202020;
+}
+
+.footer__content {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+
+    .desktop-only {
+        display: block;
+    }
+
+    header {
+        min-height: 5em;
+        max-height: 5em;
+    }
+
+    main {
+        margin-bottom: 3em;
+    }
+
+    .logo a {
+        margin-left: 2em;
+    }
+
+    nav a {
+        margin-right: 2em;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .hero-section {
+        min-height: 30em;
+        background-size: cover;
+        justify-content: flex-end;
+        padding-bottom: 1.5em;
+    }
+
+    .articles {
+        grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+        padding: 1.75em;
+        margin: 0 auto;
+        max-width: 64em;
+    }
+
+    .post__image {
+        min-width: 19em;
+        min-height: 14em;
+        max-height: 14em;
+    }
+
+    .articles__more {
+        grid-column: -3 / -2;
+    }
+
+    .footer {
+        min-height: 10em;
+    }
+
+    .about-me {
+        grid-template-columns: repeat(3, minmax(19em, 1fr));
+        max-width: 60em;
+    }
+
+    .container {
+        margin-left: 3.75em;
+        margin-right: 3.75em;
+    }
+
+    .post__expend {
+        grid-column: 1 / 4;
+    }
+
+    .post__expend_image {
+        grid-column: 1 / 4;
+        min-height: 30em;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .articles__more {
+        grid-column: 1 / 4;
+    }
+
+    .related-articles {
+        grid-column: -4 / -1;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(19em, 1fr));
+        grid-gap: 1.65em;
+    }
+
+    .post__about {
+        max-width: 11em;
+        float: left;
+        margin-right: 2em;
+    }
+
+    .about__content {
+        margin-top: 4em;
+    }
+}
