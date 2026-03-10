@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Color Scheme Generator</h1>
+        </header>
+        
+        <main>
+        <form id="choose-color-form">
+            <input type="color" name="color" id="color-picker">
+            <select name="pallettes" id="palettes">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button type="submit" id="get-color-btn">Get color scheme</button>
+        </form>
+        <div id="palette">
+            <div id="color-1" class="color"></div>
+            <div id="color-2" class="color"></div>
+            <div id="color-3" class="color"></div>
+            <div id="color-4" class="color"></div>
+            <div id="color-5" class="color"></div>
+        </div>
+        <div id="palette-hex">
+            <p id="color-hex-1" class="color-hex">#FFFFFF</p>
+            <p id="color-hex-2" class="color-hex">#FFFFFF</p>
+            <p id="color-hex-3" class="color-hex">#FFFFFF</p>
+            <p id="color-hex-4" class="color-hex">#FFFFFF</p>
+            <p id="color-hex-5" class="color-hex">#FFFFFF</p>
+        </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
