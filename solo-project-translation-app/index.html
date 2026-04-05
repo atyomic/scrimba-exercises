@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PollyGlot - Perfect Translation Every Time</title>
+        <link rel="stylesheet" href="index.css">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://localhost:3001 ws://localhost:* ws://127.0.0.1:*; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:;">
+
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="header-bg"></div>
+                <div class="header-content">
+                    <img src="assets/parrot.png" alt="PollyGlot" class="parrot-logo">
+                    <div class="logo-text">
+                        <h1>PollyGlot</h1>
+                        <p class="tagline">Perfect Translation Every Time</p>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <!-- Input Panel -->
+                <div class="panel" id="inputPanel">
+                    <div class="panel-inner">
+                        <label class="panel-label">Text to translate 👇</label>
+                        <div class="text-block" id="inputDisplay">
+                            <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+                        </div>
+
+                        <label class="panel-label select-label">Select language 👇</label>
+                        <div class="language-options">
+                            <label class="lang-option">
+                                <input type="radio" name="targetLang" value="French" checked>
+                                <span class="lang-name">French</span>
+                                <img src="assets/fr-flag.png" alt="French" class="flag-icon">
+                            </label>
+                            <label class="lang-option">
+                                <input type="radio" name="targetLang" value="Spanish">
+                                <span class="lang-name">Spanish</span>
+                                <img src="assets/sp-flag.png" alt="Spanish" class="flag-icon">
+                            </label>
+                            <label class="lang-option">
+                                <input type="radio" name="targetLang" value="Japanese">
+                                <span class="lang-name">Japanese</span>
+                                <img src="assets/jpn-flag.png" alt="Japanese" class="flag-icon">
+                            </label>
+                        </div>
+
+                        <button id="translateBtn" class="btn-translate">Translate</button>
+                    </div>
+                </div>
+
+                <!-- Output Panel (hidden initially) -->
+                <div class="panel" id="outputPanel" style="display: none;">
+                    <div class="panel-inner">
+                        <label class="panel-label">Original text 👇</label>
+                        <div class="text-block static-block">
+                            <span id="originalText"></span>
+                        </div>
+
+                        <label class="panel-label">Your translation 👇</label>
+                        <div class="text-block static-block">
+                            <span id="outputText"></span>
+                        </div>
+
+                        <button id="startOverBtn" class="btn-start-over">Start Over</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
